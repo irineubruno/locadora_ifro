@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+   <h1 class="h-100 p-5 text-white bg-dark rounded-3">
+    Lista de Veiculos
+</h1>
+<table style="border: 1px solid brown" class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Placa</th>
+            <th>Quilometragem</th>
+            <th>Preço da Diaria</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for v in veiculos %}
+        <tr>
+            <td>{{ v.placa }}</td>
+            <td>{{ v.quilometragem }}</td>
+            <td>{{ f.precodiaria }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
