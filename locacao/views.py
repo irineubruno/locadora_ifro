@@ -20,7 +20,7 @@ class ListaVeiculosPdf(View, GeraPDFMixin):
     def get(self, request, *args, **kwargs):
         funcs = Veiculo
         context = {
-            'veiculos': funcs,
+            'veiculo': funcs,
             'quant': funcs.count()
         }
         return self.render_to_pdf('listarpdf.html', context)

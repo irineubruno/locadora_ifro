@@ -1,6 +1,17 @@
 {% extends 'base.html' %}
 
 {% block titulo %}Lista de Veiculos {% endblock %}
+
+{% block estilo %}
+  table{
+    border: 1px dotted #8B4513;
+    font-size: 1.2em;
+  }
+  td{
+    padding: 0.5em;
+  }
+{% endblock %}
+
 {{% block conteudo %}
    <h1 class="h-100 p-5 text-white bg-dark rounded-3">
     Lista de Veiculos
