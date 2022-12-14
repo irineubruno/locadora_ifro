@@ -3,12 +3,12 @@ from django.views import View
 from django.views.generic import TemplateView
 from django.views.generic.list import ListView
 
-from locacao.models import Cliente
+from locacao.models import Veiculo
 
 class IndexView(TemplateView):
     template_name = 'index.html'
 
-class ListarClientesListView(ListView):
-    model = Cliente
-    template_name = ''
-    context_object_name = 'clientes'
+class ListarVeiculosListView(ListView):
+    model = Veiculo
+    template_name = 'listarveiculos.html'
+    context_object_name = 'veiculos'

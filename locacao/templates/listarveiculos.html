@@ -1,24 +1,24 @@
 {% extends 'base.html' %}
 
 {% block titulo %}Lista de Veiculos {% endblock %}
-{% block conteudo %}
-<h1 class="h-100 p-5 text-white bg-dark rounded-3">
+{{% block conteudo %}
+   <h1 class="h-100 p-5 text-white bg-dark rounded-3">
     Lista de Veiculos
 </h1>
 <table style="border: 1px solid brown" class="table table-bordered table-striped">
     <thead>
         <tr>
-            <th>Nome</th>
-            <th>Função</th>
-            <th>Departamento</th>
+            <th>Placa</th>
+            <th>Quilometragem</th>
+            <th>Preço da Diaria</th>
         </tr>
     </thead>
     <tbody>
-        {% for f in veiculos %}
+        {% for v in veiculos %}
         <tr>
-            <td>{{ f }}</td>
-            <td>{{ f.funcao }}</td>
-            <td>{{ f.depto }}</td>
+            <td>{{ v }}</td>
+            <td>{{ v }}</td>
+            <td>{{ v }}</td>
         </tr>
         {% endfor %}
     </tbody>
