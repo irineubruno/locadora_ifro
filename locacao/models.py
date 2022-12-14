@@ -80,7 +80,7 @@ class Cliente(models.Model):
     endereco = models.ForeignKey(Endereco, on_delete=models.CASCADE, blank=True, null=True)
     valorDivida = models.DecimalField('Valor da Divida', max_digits=10, decimal_places=2)
     slug = models.SlugField('Slug', max_length=250)
-    autor = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_posts')
+    autor = models.ForeignKey(User, on_delete=models.PROTECT, related_name='user_posts')
 
     def Cliente_equals(self):
         pass
