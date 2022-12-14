@@ -18,7 +18,7 @@ class ListarVeiculosListView(ListView):
 
 class ListaVeiculosPdf(View, GeraPDFMixin):
     def get(self, request, *args, **kwargs):
-        funcs = Veiculo
+        funcs = Veiculo.objects.all()
         context = {
             'veiculo': funcs,
             'quant': funcs.count()
