@@ -14,7 +14,7 @@ class ListarVeiculosListView(ListView):
     model = Veiculo
     template_name = 'listarveiculos.html'
     queryset = Veiculo.objects.all()
-    context_object_name = 'veiculos'
+    context_object_name = 'veiculo'
 
 class ListaVeiculosPdf(View, GeraPDFMixin):
     def get(self, request, *args, **kwargs):
