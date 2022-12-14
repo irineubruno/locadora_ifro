@@ -12,7 +12,7 @@ class IndexView(TemplateView):
 
 class ListarVeiculosListView(ListView):
     model = Veiculo
-    template_name = 'listarveiculos.html'
+    template_name = 'listar.html'
     queryset = Veiculo.objects.all()
     context_object_name = 'veiculo'
 

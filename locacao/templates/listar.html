@@ -16,12 +16,16 @@
     <tbody>
         {% for v in veiculo %}
         <tr>
-            <td>{{ v.id }}</td>
-            <td>{{ v.id }}</td>
-            <td>{{ v.id }}</td>
+            <td>{{ v.placa }}</td>
+            <td>{{ v.quilometragem }}</td>
+            <td>{{ v.precodiaria }}</td>
         </tr>
         {% endfor %}
     </tbody>
 </table>
+
+<p  align="center">
+   <a href="{% url 'listarpdf' %}" class="btn btn-info" >Gerar PDF</a>
+</p>
 
 {% endblock %}
