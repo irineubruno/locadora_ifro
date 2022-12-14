@@ -1,26 +1,9 @@
 {% extends "base.html" %}
 
 {% block conteudo %}
-   <h1 class="h-100 p-5 text-white bg-dark rounded-3">
-    Lista de Veiculos
-</h1>
-<table style="border: 1px solid brown" class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Placa</th>
-            <th>Quilometragem</th>
-            <th>Preço da Diaria</th>
-        </tr>
-    </thead>
-    <tbody>
-
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
-    </tbody>
-</table>
-
+   <h1 class="h-100 p-5 text-white bg-dark rounded-3" align="center">MENU</h1>
+   <p  align="center">
+   <a href="{% url 'listarveiculos' %}" class="btn btn-info" >Listar Veiculos</a>
+   <a href="{% url 'listarpdf' %}" class="btn btn-info" >Listar PDF</a>
+      </p>
 {% endblock %}
